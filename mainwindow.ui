@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1084</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI Semilight</family>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+    /*background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                                      stop:0 lightgray, stop:1 darkgray);*/
+	background-color: #98f29e;
+	
+	font: 75 9pt &quot;Segoe UI Semilight&quot;;
+	font-weight: bold;
+}
+
+QMenuBar::item {
+    spacing: 3px; /* spacing between menu bar items */
+    padding: 12px 4px;
+    background: transparent;
+	font: 75 10pt &quot;Segoe UI Semilight&quot;;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected { /* when selected using mouse or keyboard */
+   /*background: #a8a8a8;*/
+	background: #639366;
+	color:rgb(255, 255, 255);
+}
+
+QMenuBar::item:pressed {
+    background: #639366;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>180</y>
+      <width>411</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Palatino Linotype</family>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string> AGRICOPTER
+FARM MANAGEMENT SYSTEM</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1084</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFarm_Manager">
+    <property name="title">
+     <string>Chemical Spray Analysis</string>
+    </property>
+    <addaction name="actionReport"/>
+    <addaction name="separator"/>
+    <addaction name="actionSpray_Tracker"/>
+   </widget>
+   <widget class="QMenu" name="menuDrone_Tracking">
+    <property name="title">
+     <string>Survey Analysis</string>
+    </property>
+    <addaction name="actionLive_Tracking"/>
+   </widget>
+   <widget class="QMenu" name="menuSurvey_Analysis">
+    <property name="title">
+     <string>Drone Stats</string>
+    </property>
+   </widget>
+   <addaction name="menuFarm_Manager"/>
+   <addaction name="menuDrone_Tracking"/>
+   <addaction name="menuSurvey_Analysis"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionReport">
+   <property name="text">
+    <string> Report</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionSpray_Tracker">
+   <property name="text">
+    <string>Spray Tracker</string>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+  <action name="actionLive_Tracking">
+   <property name="text">
+    <string>Live Tracking</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Semilight</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="pics.qrc"/>
+ </resources>
+ <connections/>
+</ui>
